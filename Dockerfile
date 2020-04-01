@@ -6,4 +6,4 @@ WORKDIR /app
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["gunicorn", "-b", ":8080", "main:APP"]docker build --tag test .
+ENTRYPOINT ["gunicorn", "-b", ":8080", "main:APP"]
